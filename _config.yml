@@ -8,7 +8,7 @@ github_username: ticky
 theme: minima
 
 collections:
-  statutory_holidays_bc:
+  statutory_holidays_british_columbia:
     title: Statutory Holidays in British Columbia
     description: Calendar of Statutory Holidays in British Columbia, Canada
     timezone: America/Vancouver
@@ -18,6 +18,6 @@ collections:
 
 defaults:
   - scope:
-      type: "statutory_holidays_bc"
+      type: "statutory_holidays_british_columbia"
     values:
       all_day: true

@@ -10,7 +10,7 @@ Calendar of Statutory Holidays in British Columbia, Canada
 ## Events
 
 {% assign now = 'now' | date: '%s' | plus: 0 %}
-{% assign calendar = site.collections | where: "label", "statutory_holidays_bc" | first %}
+{% assign calendar = site.collections | where: "label", "statutory_holidays_british_columbia" | first %}
 {% assign events = calendar.docs %}
 
 {% for event in events %}
