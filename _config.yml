@@ -1,0 +1,23 @@
+title: Jekyll Calendar Experiment
+author: Jessica Stokes
+description: >-
+  A Jekyll-powered set of calendars. Contributions welcome!
+future: true
+github_username: ticky
+
+theme: minima
+
+collections:
+  statutory_holidays_bc:
+    title: Statutory Holidays in British Columbia
+    description: Calendar of Statutory Holidays in British Columbia, Canada
+    timezone: America/Vancouver
+    organizer: Employment Standards British Columbia
+    source: "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/factsheets/statutory-holidays-in-british-columbia"
+    output: true
+
+defaults:
+  - scope:
+      type: "statutory_holidays_bc"
+    values:
+      all_day: true

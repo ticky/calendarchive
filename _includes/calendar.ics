@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Jessica Stokes//Jekyll Calendar Hack 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:{{ include.collection.title }}
+X-WR-TIMEZONE:{{ include.collection.timezone }}
+X-WR-CALDESC:{{ include.collection.description }}{% for event in include.collection.docs %}
+BEGIN:VEVENT
+UID:{{ event.path }}
+SUMMARY:{{ event.name }}
+DESCRIPTION:{{ event.content | strip | replace: "[^\r]\n", "\r\n" }}
+ORGANIZER:{{ include.collection.organizer }}
+DTSTAMP:{{ event.date | date: "%Y%m%dT%H%M%SZ"}}
+{%
+if event.all_day
+%}DTSTART;VALUE=DATE:{{ event.date | date: "%Y%m%d"}}
+{% if event.date_end
+%}DTEND;VALUE=DATE:{{ event.date_end | date: "%Y%m%d"}}{%
+else
+%}DTEND;VALUE=DATE:{{ event.date | date: "%Y%m%d"}}{%
+endif
+%}{%
+else
+%}DTSTART:{{ event.date | date: "%Y%m%dT%H%M%S"}}
+DTEND:{{ event.date_end | date: "%Y%m%dT%H%M%S"}}{%
+endif
+%}{%
+if event.location
+%}LOCATION:{{ event.location }}{%
+endif
+%}
+END:VEVENT{% endfor %}
+END:VCALENDAR
