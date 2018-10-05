@@ -1,3 +1,3 @@
 ---
-name: Labour Day
+title: Labour Day
 ---

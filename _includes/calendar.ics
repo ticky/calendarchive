@@ -8,7 +8,7 @@ X-WR-TIMEZONE:{{ include.collection.timezone }}
 X-WR-CALDESC:{{ include.collection.description }}{% for event in include.collection.docs %}
 BEGIN:VEVENT
 UID:{{ event.path }}
-SUMMARY:{{ event.name }}
+SUMMARY:{{ event.title }}
 DESCRIPTION:{{ event.content | strip | replace: "[^\r]\n", "\r\n" }}
 ORGANIZER:{{ include.collection.organizer }}
 DTSTAMP:{{ event.date | date: "%Y%m%dT%H%M%SZ"}}

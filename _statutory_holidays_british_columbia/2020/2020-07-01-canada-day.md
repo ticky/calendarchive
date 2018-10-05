@@ -1,3 +1,3 @@
 ---
-name: Canada Day
+title: Canada Day
 ---

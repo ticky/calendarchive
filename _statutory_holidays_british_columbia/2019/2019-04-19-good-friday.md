@@ -1,3 +1,3 @@
 ---
-name: Good Friday
+title: Good Friday
 ---

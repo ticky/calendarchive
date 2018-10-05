@@ -1,3 +1,3 @@
 ---
-name: New Year’s Day
+title: New Year’s Day
 ---

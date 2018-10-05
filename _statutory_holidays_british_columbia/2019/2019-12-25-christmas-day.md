@@ -1,3 +1,3 @@
 ---
-name: Christmas Day
+title: Christmas Day
 ---

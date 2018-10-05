@@ -1,3 +1,3 @@
 ---
-name: Victoria Day
+title: Victoria Day
 ---

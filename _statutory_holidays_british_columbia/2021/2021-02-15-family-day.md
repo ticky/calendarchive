@@ -1,3 +1,3 @@
 ---
-name: Family Day
+title: Family Day
 ---

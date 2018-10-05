@@ -1,3 +1,3 @@
 ---
-name: Thanksgiving Day
+title: Thanksgiving Day
 ---

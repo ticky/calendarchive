@@ -1,3 +1,3 @@
 ---
-name: Remembrance Day
+title: Remembrance Day
 ---
