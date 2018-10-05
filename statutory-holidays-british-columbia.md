@@ -5,7 +5,7 @@ description: Calendar of Statutory Holidays in British Columbia, Canada
 
 Calendar of Statutory Holidays in British Columbia, Canada
 
-[Subscribe](webcal:{{ site.url | replace: 'http:', '' | replace: 'https:', '' }}{% link statutory-holidays-british-columbia.ics %})
+[Subscribe](webcal:{{ site.baseurl | replace: 'http:', '' | replace: 'https:', '' }}{% link statutory-holidays-british-columbia.ics %})
 
 ## Events
 
